@@ -1,0 +1,25 @@
+
+
+<div *ngIf="loaded == true" class="container">
+
+    <div  class="row">
+        <div class="col-md-9">
+
+            <img [src]="mydata.image_url" class="w-100"/> 
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-9">
+
+            <ul>
+
+                <li *ngFor="let i of intg"> {{i}} </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,35 @@
+
+
+@font-face
+{
+    src: url(../../assets/static/DancingScript-Bold.ttf);
+    font-family: dancing;
+}
+
+img 
+{
+    height: 200px;
+}
+
+
+.fold 
+{
+    background-image: url(../../assets/2.jpg); 
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center center;
+}
+
+.fold .overlay
+{
+    background-color: rgba(21, 87, 36, 0.7);
+    height: 100%;
+}
+
+.typed-text
+{
+    color: white;
+    font-size: 70px;
+    font-family: dancing;
+}

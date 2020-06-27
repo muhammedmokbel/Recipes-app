@@ -1,0 +1,22 @@
+
+
+
+
+
+<form  [formGroup]="mydata"   (ngSubmit)="getLoginData(mydata)">
+
+    <div class="form-group">
+        <label> E-mail </label>
+        <input  formControlName="email" class="form-control" type="email"/> 
+    </div>
+
+    <div class="form-group">
+        <label> password </label>
+        <input formControlName="password" class="form-control" type="password"/> 
+    </div>
+
+
+    <button type="submit" class="btn btn-success"> Login </button>
+</form>
+
+

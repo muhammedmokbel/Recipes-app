@@ -1,0 +1,50 @@
+
+
+<section class="fold">
+
+  <div class="overlay d-flex justify-content-center align-items-center">
+
+
+    <p id="typing"><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+
+  </div>
+
+
+
+</section>
+
+
+
+<input [(ngModel)]="searchTerm" class="form-control my-3 mx-auto w-50 " type="text" placeholder="Search">
+
+
+
+<div class="container py-5">
+
+  <div class="row">
+
+
+  <div  *ngFor="let x of mydata|search:searchTerm" class="col-md-3">
+  <div class="card mb-3">
+      <img [src]="x.image_url" class="card-img-top w-100" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> {{x.title|textless}}  </h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+
+        <a [routerLink]="[ '/recipe' , x.recipe_id ]" >
+        <button class="btn btn-success"> see ingredients </button>
+        </a>
+
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+</div>
+

@@ -1,0 +1,50 @@
+
+
+
+<form  [formGroup]="myform" (ngSubmit)="getRegData(myform)" >
+
+
+    <div class="form-group">
+
+        <label> First Name </label>
+        <input formControlName="first_name"  class="form-control" type="text" /> 
+
+    </div>
+
+    
+    <div class="form-group">
+
+        <label> Last Name </label>
+        <input formControlName="last_name" class="form-control" type="text" /> 
+
+    </div>
+
+    
+    <div class="form-group">
+
+        <label> age </label>
+        <input formControlName="age" class="form-control" type="number" /> 
+
+    </div>
+
+    
+    <div class="form-group">
+
+        <label> E-mail </label>
+        <input formControlName="email" class="form-control" type="email" /> 
+
+    </div>
+
+    
+    <div class="form-group">
+
+        <label> password </label>
+        <input formControlName="password" class="form-control" type="password" /> 
+
+    </div>
+
+
+    <button type="submit" class="btn btn-success"> Submit </button>
+
+</form>
+
